@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Green Bean Coffee | Pure Beans. Perfect Brew.</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#4B2E2B", /* Coffee Brown */
+                        "background-light": "#F2ECE2", /* Warm beige */
+                        "background-dark": "#3B2B28", /* Dark brown */
+                        "accent": "#8C6A55", /* Rustic wood accent */
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-image: url('https://www.transparenttextures.com/patterns/wood-pattern.png');
+            /* subtle wood texture */
+
+        }
+
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
+        /* Accent buttons and headings */
+        .text-primary {
+            color: #4B2E2B;
+        }
+
+        .bg-primary {
+            background-color: #4B2E2B;
+        }
+    </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark text-[#0e1b0e] dark:text-white antialiased">
+    <!-- Header / Navigation -->
+    <header class="sticky top-0 z-50 bg-primary/90 backdrop-blur-md border-b border-primary/20">
+
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 flex h-20 items-center justify-between">
+
+            <!-- Logo -->
+            <div class="flex items-center gap-2">
+                <div style="margin-bottom:8px;">
+                        <img src="Images/Logo (1).png" alt="Cremeverse Logo" style="
+                                width:170px;
+                                height:auto;
+                                object-fit:contain;
+                            ">
+                    </div>
+            </div>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex items-center gap-10">
+                <a class="text-sm font-semibold hover:text-[#f5e6d3] transition-colors text-white"
+                    href="index.html">Home</a>
+                <a class="text-sm font-semibold hover:text-[#f5e6d3] transition-colors text-white"
+                    href="Events.html">Events</a>
+                <a class="text-sm font-semibold hover:text-[#f5e6d3] transition-colors text-white"
+                    href="Blog.html">Blog</a>
+                <a class="text-sm font-semibold hover:text-[#f5e6d3] transition-colors text-white"
+                    href="Contact.html">Contact</a>
+                <a class="text-sm font-semibold hover:text-[#f5e6d3] transition-colors text-white"
+                    href="Partners.html">Partners</a>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <button id="menuBtn" class="md:hidden p-2 rounded-lg border border-primary/20">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+
+        </div>
+
+        <!-- Mobile Nav Dropdown -->
+        <div id="mobileMenu" class="hidden px-6 pb-6">
+            <nav class="flex flex-col gap-4 bg-white dark:bg-background-dark rounded-xl p-4 shadow">
+                <a class="text-sm font-semibold hover:text-primary transition-colors" href="index.html">Home</a>
+                <a class="text-sm font-semibold hover:text-primary transition-colors" href="Events.html">Events</a>
+                <a class="text-sm font-semibold hover:text-primary transition-colors" href="Blog.html">Blog</a>
+                <a class="text-sm font-semibold hover:text-primary transition-colors" href="Contact.html">Contact</a>
+                <a class="text-sm font-semibold hover:text-primary transition-colors" href="Partners.html">Partners</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative w-full overflow-hidden pt-16 pb-24 lg:pt-32 lg:pb-40">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 grid lg:grid-cols-2 gap-16 items-center">
+            <div class="z-10">
+                <span
+                    class="inline-block px-4 py-1.5 mb-6 text-xs font-bold tracking-widest uppercase bg-primary/20 text-[#4B2E2B] rounded-full">Sustainable
+                    &amp; Organic</span>
+                <h1 class="text-5xl lg:text-7xl font-black leading-[1.1] mb-8 tracking-tight">
+                    Pure Beans. <br />
+                    <span class="text-primary">Perfect Brew.</span>
+                </h1>
+                <p class="text-lg text-gray-600 dark:text-gray-400 mb-10 max-w-lg leading-relaxed">
+                    Discover the art of sustainable coffee, roasted to perfection in small batches and delivered fresh
+                    to your doorstep.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <button href="Events.html"
+                        class="bg-primary text-[white] px-8 py-4 rounded-xl text-lg font-bold shadow-lg hover:bg-primary/90 transition-all flex items-center justify-center gap-2">
+                        Explore the Events
+                        <span class="material-symbols-outlined">arrow_forward</span>
+                    </button>
+                    <button
+                        class="border border-primary/30 px-8 py-4 rounded-xl text-lg font-bold hover:bg-primary/5 transition-all">
+                        Contact Us
+                    </button>
+                </div>
+            </div>
+            <div class="relative">
+                <div class="absolute -top-20 -right-20 w-96 h-96 bg-primary/30 rounded-full blur-[100px] -z-10"></div>
+                <div
+                    class="rounded-3xl overflow-hidden shadow-2xl transform lg:rotate-3 hover:rotate-0 transition-transform duration-700">
+                    <img alt="Premium Coffee Cup" class="w-full h-[500px] object-cover"
+                        data-alt="Aesthetic white coffee cup on a wooden table with green leaves"
+                        src="Images/Coffee 1.jpg" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Freshly Prepared Daily Section -->
+    <section class="py-24 bg-[white] dark:bg-[white]">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 text-center">
+            <h2 class="text-3xl lg:text-4xl font-extrabold mb-4 text-[#3a1f0b] dark:text-white">
+                Freshly Prepared Daily
+            </h2>
+            <div class="w-20 h-1 bg-primary rounded-full mb-6 mx-auto"></div>
+            <p class="text-[#7a5b49] dark:text-gray-400 mb-12 max-w-2xl mx-auto text-lg leading-relaxed">
+                At Green Bean Coffee, everything is prepared in-house daily. From our freshly baked breads to the
+                delicious pastries and specialty items, nothing is leftover or made the day before. Every product
+                you enjoy is made today, just for you, with passion and care.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+                <!-- Feature 1 -->
+                <div class="flex flex-col items-center text-center gap-4">
+                    <div class="bg-primary/20 p-6 rounded-full flex items-center justify-center">
+                        <span class="material-symbols-outlined text-primary text-4xl">bakery_dining</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-[#3a1f0b] dark:text-white">Baked In-House</h3>
+                    <p class="text-[#7a5b49] dark:text-gray-400 text-base">
+                        All breads, pastries, and snacks are made from scratch in our kitchen every day.
+                    </p>
+                </div>
+                <!-- Feature 2 -->
+                <div class="flex flex-col items-center text-center gap-4">
+                    <div class="bg-primary/20 p-6 rounded-full flex items-center justify-center">
+                        <span class="material-symbols-outlined text-primary text-4xl">restaurant_menu</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-[#3a1f0b] dark:text-white">Today’s Fresh Batch</h3>
+                    <p class="text-[#7a5b49] dark:text-gray-400 text-base">
+                        Every product is made today. Nothing is stored overnight or reused from the previous day.
+                    </p>
+                </div>
+                <!-- Feature 3 -->
+                <div class="flex flex-col items-center text-center gap-4">
+                    <div class="bg-primary/20 p-6 rounded-full flex items-center justify-center">
+                        <span class="material-symbols-outlined text-primary text-4xl">eco</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-[#3a1f0b] dark:text-white">Fresh & Ethical</h3>
+                    <p class="text-[#7a5b49] dark:text-gray-400 text-base">
+                        Enjoy the highest quality with ethically sourced ingredients, crafted with love every day.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Featured Coffee -->
+    <section class="py-24 bg-white dark:bg-[#0d1a0d]">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-extrabold mb-4">Our Coffee Gallery</h2>
+                <p class="text-gray-500">A glimpse into our world of artisanal roasting and coffee culture.</p>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="space-y-4">
+                    <img alt="Coffee Lifestyle" class="w-full h-64 object-cover rounded-2xl shadow-sm"
+                        src="Images/Build. Read. Repeat.jpg" />
+                    <img alt="Coffee Beans" class="w-full h-80 object-cover rounded-2xl shadow-sm"
+                        src="Images/Coffee 1.jpg" />
+                </div>
+                <div class="space-y-4 pt-8">
+                    <img alt="Espresso Shot" class="w-full h-80 object-cover rounded-2xl shadow-sm"
+                        src="Images/Espresso With Ice Cubes.jpg" />
+                    <img alt="Cafe Ambiance" class="w-full h-64 object-cover rounded-2xl shadow-sm"
+                        src="Images/Green Ben Sunrise.jpg" />
+                </div>
+                <div class="space-y-4">
+                    <img alt="Latte Art" class="w-full h-64 object-cover rounded-2xl shadow-sm"
+                        src="Images/Korean Bun.jpg" />
+                    <img alt="Coffee Packaging" class="w-full h-80 object-cover rounded-2xl shadow-sm"
+                        src="Images/Tropical Freshness.jpg" />
+                </div>
+                <div class="space-y-4 pt-8">
+                    <img alt="Pour Over" class="w-full h-80 object-cover rounded-2xl shadow-sm" src="Images/Piz.jpg" />
+                    <img alt="Roasting Equipment" class="w-full h-64 object-cover rounded-2xl shadow-sm"
+                        src="Images/Burger.jpg" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonials Section -->
+    <section class="py-24 bg-background-light dark:bg-background-dark">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 text-center">
+            <h2 class="text-3xl lg:text-4xl font-extrabold mb-4 text-[#3a1f0b] dark:text-white">
+                What Our Guests Say
+            </h2>
+            <p class="text-[#7a5b49] dark:text-gray-400 mb-16 max-w-2xl mx-auto">
+                From the aroma of our freshly roasted beans to the cozy corners of our cafe, our guests love sharing
+                their experiences.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Review 1 -->
+                <div
+                    class="bg-white dark:bg-[#3b2a21] p-10 rounded-2xl shadow-md border border-primary/10 text-left relative">
+                    <span class="material-symbols-outlined text-primary text-5xl absolute -top-4 left-6 opacity-30">
+                        format_quote
+                    </span>
+                    <p class="italic text-[#5b4330] dark:text-gray-300 mb-8 leading-relaxed">
+                        This place can turn any bad day into an absolute GREAT DAY.
+                        It’s just as lovely to come here alone, pick a book from their tiny library and enjoy some quiet, peaceful time with yourself in the café. .
+                    </p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center">
+                            <span class="material-symbols-outlined text-primary">person</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-[#3a1f0b] dark:text-white">Thejaswini C.</h4>
+                            <p class="text-xs text-[#7a5b49] dark:text-gray-400">Customer</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div
+                    class="bg-white dark:bg-[#3b2a21] p-10 rounded-2xl shadow-md border border-primary/10 text-left relative">
+                    <span class="material-symbols-outlined text-primary text-5xl absolute -top-4 left-6 opacity-30">
+                        format_quote
+                    </span>
+                    <p class="italic text-[#5b4330] dark:text-gray-300 mb-8 leading-relaxed">
+                        Easily one of the best cafe for its ambience, service and spread on the menu. The menu is presented in a unique way in form of a paper as wide as a newspaper. The ambience feels welcoming. The staff, very friendly, courteous and professional.
+                    </p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center">
+                            <span class="material-symbols-outlined text-primary">person</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-[#3a1f0b] dark:text-white">Rahul Chandra Shekar.</h4>
+                            <p class="text-xs text-[#7a5b49] dark:text-gray-400">Local Guide</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div
+                    class="bg-white dark:bg-[#3b2a21] p-10 rounded-2xl shadow-md border border-primary/10 text-left relative">
+                    <span class="material-symbols-outlined text-primary text-5xl absolute -top-4 left-6 opacity-30">
+                        format_quote
+                    </span>
+                    <p class="italic text-[#5b4330] dark:text-gray-300 mb-8 leading-relaxed">
+                        It was a good experience. Food was nice. Expect some sandwiches without mayonnaise and might be with yogurt or healthy versions of some items.
+                    </p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center">
+                            <span class="material-symbols-outlined text-primary">person</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-[#3a1f0b] dark:text-white">Glen Dcosta</h4>
+                            <p class="text-xs text-[#7a5b49] dark:text-gray-400">Cafe Regular</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Add more reviews similarly if needed -->
+            </div>
+        </div>
+    </section>
+    <!-- Blog Highlights -->
+    <section class="py-24 bg-white dark:bg-[#0d1a0d]">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-extrabold mb-4">The Coffee Journal</h2>
+                <p class="text-gray-500">Insights from our world of coffee</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <!-- Post 1 -->
+                <article class="flex flex-col">
+                    <div class="rounded-2xl overflow-hidden mb-6 h-64 shadow-lg">
+                        <img alt="Brewing Method" class="w-full h-full object-cover"
+                            data-alt="Person performing a pour-over coffee brew"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCiD4oNPyi-MeC4fv46h186jqJJFlUxsRVfxf1sGUcDdWM6qVbTbR6DrG10YgpRHtruDPQRrJpT4wQKbGtSeKoG_67y_3mK7J2HhKDuLlVuLnuOKIuKMNSkf3urYSBetEqMx-Jt19oSiZhBDki530Va1NIe4aqQRmzY8SrzjFZuGUGzZnrLjqz6erd8SK2kzQIJA2PBJdmQyJDzqezCZ_DiQ1fC4XO_sqJQBk6gv8T9L7XFr_wYW5SF8flg4W7ocyNgJB8UMZFmdxU" />
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 hover:text-primary transition-colors cursor-pointer leading-snug">
+                        Coffee Café for Professionals</h3>
+                    <p class="text-gray-500 text-sm mb-6 line-clamp-2">Best Work-Friendly Coffee Café for Professionals
+                        and Remote Workers.</p>
+                    <button class="flex items-center gap-2 font-bold text-sm text-[#0e1b0e] dark:text-white group">
+                        Read More
+                        <span
+                            class="material-symbols-outlined text-primary group-hover:translate-x-1 transition-transform">arrow_right_alt</span>
+                    </button>
+                </article>
+                <!-- Post 2 -->
+                <article class="flex flex-col">
+                    <div class="rounded-2xl overflow-hidden mb-6 h-64 shadow-lg">
+                        <img alt="Roasting Process" class="w-full h-full object-cover"
+                            data-alt="Coffee beans being roasted in a machine"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCz7yQmUzo-jktlYqsumF2Mg8xVXCgsYJvujw6HmZhoyxQuf30tMB3ZbNP0dFICXvy98Z-AzTuA-LqWp8gK78aAUJA1rbQMc-fsmfaLkqxs5q_TYKa6waBvfp2J43x7hLODVt6CM2jVM1nHK99iLfaYYbGNGaEld-a521mjy-5KojfztOP7jylcaIa6Du6jwIqgD6nv1enZCbHxKQZQ1nQLg5KmWqIrHHviKSzjS1MLNIjFnmwjhc_Tf83M-gRK6MNqJSOMXpFukEs" />
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 hover:text-primary transition-colors cursor-pointer leading-snug">
+                        Cafe for Bussiness Mettings</h3>
+                    <p class="text-gray-500 text-sm mb-6 line-clamp-2">Coffee Cafés Are Perfect for Business Meetings
+                        and Networking</p>
+                    <button class="flex items-center gap-2 font-bold text-sm text-[#0e1b0e] dark:text-white group">
+                        Read More
+                        <span
+                            class="material-symbols-outlined text-primary group-hover:translate-x-1 transition-transform">arrow_right_alt</span>
+                    </button>
+                </article>
+                <!-- Post 3 -->
+                <article class="flex flex-col">
+                    <div class="rounded-2xl overflow-hidden mb-6 h-64 shadow-lg">
+                        <img alt="Coffee Storage" class="w-full h-full object-cover"
+                            data-alt="Glass jars filled with fresh coffee beans"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCl777e3gZO5h2jjs6AstpDbSCYEenFLc03hoFEmXaJdC_IhAPQEsuOJN_LMdY5ULuD2sRZ8PWOkeaNK7ivvuPhdL6t0kOjsQADIv-ljVj8_IwIV3Tws7xfhalPZPG8p9ZrjDte9JebcbngTiaDSVAPgWZS71D6rq2MnrSXssb9-M61yP07oMiB2M3RLTyLprVXZhqlJud1wtIgNZ2DaMMMsvArJqKmDV3307i21pwRpcT885v1gBqIfHUWk5-MBdMcbeDxQzKyhYg" />
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 hover:text-primary transition-colors cursor-pointer leading-snug">
+                        Coffee with Comfort Food</h3>
+                    <p class="text-gray-500 text-sm mb-6 line-clamp-2">Best Coffee and Comfort Food for Busy
+                        Professionals</p>
+                    <button class="flex items-center gap-2 font-bold text-sm text-[#0e1b0e] dark:text-white group">
+                        Read More
+                        <span
+                            class="material-symbols-outlined text-primary group-hover:translate-x-1 transition-transform">arrow_right_alt</span>
+                    </button>
+                </article>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-background-dark text-white pt-20 pb-10 border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+                <div class="col-span-1 md:col-span-1">
+                    <div style="margin-bottom:8px;">
+                        <img src="Images/Logo (1).png" alt="Cremeverse Logo" style="
+                                width:170px;
+                                height:auto;
+                                object-fit:contain;
+                            ">
+                    </div>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                        Dedicated to bringing you the finest ethically sourced coffee from across the globe.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-6">Quick Links</h4>
+                    <ul class="space-y-4 text-sm text-gray-400">
+                        <li><a class="hover:text-primary transition-colors" href="/index.html">Home</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="/Blog.html">Blog</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="/Contact.html">Contact</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="/Events.html">Events</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="/Partners.html">Partners</a></li>
+
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-6">Contact Us</h4>
+                    <ul class="space-y-4 text-sm text-gray-400">
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-primary text-sm mt-0.5">location_on</span>
+                            220, Anjanapura, Double Rd, Narayana Nagar 1st Block, Bengaluru, Karnataka 560062
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="material-symbols-outlined text-primary text-sm">phone</span>
+                             086189 66567
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div
+                class="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-500">
+                <p>© 2024 Green Bean Coffee Roasters. All rights reserved.</p>
+                <div class="flex gap-8">
+                    <a class="hover:text-white transition-colors" href="#">Privacy Policy</a>
+                    <a class="hover:text-white transition-colors" href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuBtn = document.getElementById("menuBtn");
+            const mobileMenu = document.getElementById("mobileMenu");
+            // Toggle on button click
+            menuBtn.addEventListener("click", function () {
+                mobileMenu.classList.toggle("hidden");
+            });
+        });
+        // Auto close when screen becomes desktop
+        window.addEventListener("resize", () => {
+            if (window.innerWidth >= 768) { // md breakpoint
+                mobileMenu.classList.add("hidden");
+            }
+        });
+    </script>
+
+</body>
+
+</html>
