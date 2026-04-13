@@ -7,6 +7,8 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>Contact &amp; About | Green Bean Coffee</title>
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script defer src="/_vercel/analytics/script.js"></script>
+
     <link
         href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap"
         rel="stylesheet" />
@@ -62,12 +64,12 @@
             <!-- Logo -->
             <div class="flex items-center gap-2">
                 <div style="margin-bottom:8px;">
-                        <img src="Images/Logo (1).png" alt="Cremeverse Logo" style="
+                    <img src="Images/Logo (1).png" alt="Cremeverse Logo" style="
                                 width:170px;
                                 height:auto;
                                 object-fit:contain;
                             ">
-                    </div>
+                </div>
             </div>
 
             <!-- Desktop Nav -->
@@ -106,71 +108,73 @@
     <main class="max-w-7xl mx-auto px-6 md:px-20 py-12 md:py-20">
         <!-- Contact Section -->
         <section class="mb-32">
-    <div class="mb-12">
-        <h2 class="text-4xl md:text-5xl font-black mb-4 tracking-tight">
-            Let's Brew Something Great
-        </h2>
-        <p class="text-lg text-[primary] dark:text-primary/80 max-w-2xl">
-            Whether you have a question about our roasting process or want to stock our beans in your cafe, we're here to help.
-        </p>
-    </div>
-
-    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-
-        <!-- Contact Details -->
-        <div class="lg:col-span-5 space-y-6">
-            
-            <div class="p-6 rounded-xl border border-primary/20 bg-white dark:bg-white/5 flex gap-5">
-                <div class="size-12 rounded-lg bg-primary/20 flex items-center justify-center text-primary">
-                    <span class="material-symbols-outlined">call</span>
-                </div>
-                <div>
-                    <p class="text-sm font-bold uppercase tracking-wider text-[primary]">Call Us</p>
-                    <p class="text-lg font-semibold">086189 66567</p>
-                    <p class="text-sm opacity-60">Daily 10am - 10pm IST</p>
-                </div>
+            <div class="mb-12">
+                <h2 class="text-4xl md:text-5xl font-black mb-4 tracking-tight">
+                    Let's Brew Something Great
+                </h2>
+                <p class="text-lg text-[primary] dark:text-primary/80 max-w-2xl">
+                    Whether you have a question about our roasting process or want to stock our beans in your cafe,
+                    we're here to help.
+                </p>
             </div>
 
-            <div class="p-6 rounded-xl border border-primary/20 bg-white dark:bg-white/5 flex gap-5">
-                <div class="size-12 rounded-lg bg-primary/20 flex items-center justify-center text-primary">
-                    <span class="material-symbols-outlined">mail</span>
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+
+                <!-- Contact Details -->
+                <div class="lg:col-span-5 space-y-6">
+
+                    <div class="p-6 rounded-xl border border-primary/20 bg-white dark:bg-white/5 flex gap-5">
+                        <div class="size-12 rounded-lg bg-primary/20 flex items-center justify-center text-primary">
+                            <span class="material-symbols-outlined">call</span>
+                        </div>
+                        <div>
+                            <p class="text-sm font-bold uppercase tracking-wider text-[primary]">Call Us</p>
+                            <p class="text-lg font-semibold">086189 66567</p>
+                            <p class="text-sm opacity-60">Daily 10am - 10pm IST</p>
+                        </div>
+                    </div>
+
+                    <div class="p-6 rounded-xl border border-primary/20 bg-white dark:bg-white/5 flex gap-5">
+                        <div class="size-12 rounded-lg bg-primary/20 flex items-center justify-center text-primary">
+                            <span class="material-symbols-outlined">mail</span>
+                        </div>
+                        <div>
+                            <p class="text-sm font-bold uppercase tracking-wider text-[primary]">Email Us</p>
+                            <p class="text-lg font-semibold">gbcoffee.22@gmail.com</p>
+                            <p class="text-sm opacity-60">We reply within 24 hours</p>
+                        </div>
+                    </div>
+
+                    <!-- Map -->
+                    <div class="rounded-xl overflow-hidden border border-primary/20">
+                        <iframe src="https://www.google.com/maps?q=Coffee+Shop&output=embed"
+                            class="w-full h-[260px] border-0" loading="lazy">
+                        </iframe>
+                    </div>
                 </div>
-                <div>
-                    <p class="text-sm font-bold uppercase tracking-wider text-[primary]">Email Us</p>
-                    <p class="text-lg font-semibold">gbcoffee.22@gmail.com</p>
-                    <p class="text-sm opacity-60">We reply within 24 hours</p>
+
+                <!-- Coffee Image -->
+                <div class="lg:col-span-7">
+                    <div class="relative group overflow-hidden rounded-2xl">
+
+                        <img src="Images/Espresso With Ice Cubes.jpg" alt="Coffee"
+                            class="w-full h-[500px] object-cover rounded-2xl transition-transform duration-700 group-hover:scale-105">
+
+                        <!-- Optional Overlay -->
+                        <div
+                            class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition duration-500 rounded-2xl">
+                        </div>
+
+                        <!-- Optional Text Overlay -->
+
+                    </div>
                 </div>
-            </div>
-
-            <!-- Map -->
-            <div class="rounded-xl overflow-hidden border border-primary/20">
-                <iframe src="https://www.google.com/maps?q=Coffee+Shop&output=embed"
-                    class="w-full h-[260px] border-0" loading="lazy">
-                </iframe>
-            </div>
-        </div>
-
-        <!-- Coffee Image -->
-        <div class="lg:col-span-7">
-            <div class="relative group overflow-hidden rounded-2xl">
-                
-                <img src="Images/Espresso With Ice Cubes.jpg"
-                    alt="Coffee"
-                    class="w-full h-[500px] object-cover rounded-2xl transition-transform duration-700 group-hover:scale-105">
-
-                <!-- Optional Overlay -->
-                <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition duration-500 rounded-2xl"></div>
-
-                <!-- Optional Text Overlay -->
 
             </div>
-        </div>
+        </section>
 
-    </div>
-</section>
-                
-                <!-- Contact Form -->
-                <!-- <div
+        <!-- Contact Form -->
+        <!-- <div
                     class="lg:col-span-7 bg-white dark:bg-white/5 p-8 md:p-10 rounded-2xl border border-pista shadow-sm">
                     <form class="space-y-6">
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -252,7 +256,7 @@
                         </li>
                         <li class="flex items-center gap-3">
                             <span class="material-symbols-outlined text-primary text-sm">phone</span>
-                             086189 66567
+                            086189 66567
                         </li>
                     </ul>
                 </div>
