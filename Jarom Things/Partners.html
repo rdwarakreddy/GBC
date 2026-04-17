@@ -65,53 +65,67 @@
     <div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
         <!-- Top Navigation -->
         <!-- Header / Navigation -->
-       <header class="sticky top-0 z-50 bg-primary/90 backdrop-blur-md border-b border-primary/20">
+        <header class="sticky top-0 z-50 bg-[FEFDDF] backdrop-blur-md border-b border-primary/20">
 
-        <div class="max-w-7xl mx-auto px-6 lg:px-12 flex h-20 items-center justify-between">
+            <div class="max-w-7xl mx-auto px-6 lg:px-12 flex h-20 items-center justify-between">
 
-            <!-- Logo -->
-            <div class="flex items-center gap-2">
-                <div style="margin-bottom:8px;">
-                        <img src="Images/Logo (1).png" alt="Cremeverse Logo" style="
+                <!-- Logo -->
+                <div class="flex items-center gap-2">
+                    <!-- <div style="margin-bottom:8px;">
+                    <img src="Images/Logo (1).png" alt="Cremeverse Logo" style="
                                 width:170px;
                                 height:auto;
                                 object-fit:contain;
                             ">
-                    </div>
+                </div> -->
+                </div>
+
+                <!-- Desktop Nav -->
+                <nav class="hidden md:flex items-center gap-10">
+                    <a class="text-sm font-semibold hover:text-primary hover:font-bold transition-colors text-primary"
+                        href="index.html">Home</a>
+                    <a class="text-sm font-semibold hover:text-primary hover:font-bold transition-colors text-primary"
+                        href="Events.html">Events</a>
+                    <a class="text-sm font-semibold hover:text-primary hover:font-bold transition-colors text-primary"
+                        href="Blog.html">Blog</a>
+                    <a class="text-sm font-semibold hover:text-primary hover:font-bold transition-colors text-primary"
+                        href="Contact.html">Contact</a>
+                    <a class="text-sm font-semibold hover:text-primary hover:font-bold transition-colors text-primary"
+                        href="Partners.html">Partners</a>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <button id="menuBtn" class="md:hidden p-2 rounded-lg border border-primary/20">
+                    <span class="material-symbols-outlined">menu</span>
+                </button>
+
             </div>
 
-            <!-- Desktop Nav -->
-            <nav class="hidden md:flex items-center gap-10">
-                <a class="text-sm font-semibold hover:text-[#f5e6d3] transition-colors text-white"
-                    href="index.html">Home</a>
-                <a class="text-sm font-semibold hover:text-[#f5e6d3] transition-colors text-white"
-                    href="Events.html">Events</a>
-                <a class="text-sm font-semibold hover:text-[#f5e6d3] transition-colors text-white"
-                    href="Blog.html">Blog</a>
-                <a class="text-sm font-semibold hover:text-[#f5e6d3] transition-colors text-white"
-                    href="Contact.html">Contact</a>
-                <a class="text-sm font-semibold hover:text-[#f5e6d3] transition-colors text-white"
-                    href="Partners.html">Partners</a>
-            </nav>
+            <!-- Mobile Nav Dropdown -->
+            <div id="mobileMenu" class="hidden px-6 pb-6">
+                <nav class="flex flex-col gap-4 bg-white dark:bg-background-dark rounded-xl p-4 shadow">
+                    <a class="text-sm font-semibold hover:text-primary hover:font-bold transition-colors"
+                        href="index.html">Home</a>
+                    <a class="text-sm font-semibold hover:text-primary hover:font-bold transition-colors"
+                        href="Events.html">Events</a>
+                    <a class="text-sm font-semibold hover:text-primary hover:font-bold transition-colors"
+                        href="Blog.html">Blog</a>
+                    <a class="text-sm font-semibold hover:text-primary hover:font-bold transition-colors"
+                        href="Contact.html">Contact</a>
+                    <a class="text-sm font-semibold hover:text-primary hover:font-bold transition-colors"
+                        href="Partners.html">Partners</a>
+                </nav>
+            </div>
+        </header>
 
-            <!-- Mobile Menu Button -->
-            <button id="menuBtn" class="md:hidden p-2 rounded-lg border border-primary/20">
-                <span class="material-symbols-outlined">menu</span>
-            </button>
-
+        <!--Logo -->
+        <div class="w-full flex justify-center pt-4">
+            <div class="flex items-center justify-center">
+                <div class="mb-2">
+                    <img src="Images/Logo (1).png" alt="Cremeverse Logo" class="w-[320px] h-auto object-contain">
+                </div>
+            </div>
         </div>
-
-        <!-- Mobile Nav Dropdown -->
-        <div id="mobileMenu" class="hidden px-6 pb-6">
-            <nav class="flex flex-col gap-4 bg-white dark:bg-background-dark rounded-xl p-4 shadow">
-                <a class="text-sm font-semibold hover:text-primary transition-colors" href="index.html">Home</a>
-                <a class="text-sm font-semibold hover:text-primary transition-colors" href="Events.html">Events</a>
-                <a class="text-sm font-semibold hover:text-primary transition-colors" href="Blog.html">Blog</a>
-                <a class="text-sm font-semibold hover:text-primary transition-colors" href="Contact.html">Contact</a>
-                <a class="text-sm font-semibold hover:text-primary transition-colors" href="Partners.html">Partners</a>
-            </nav>
-        </div>
-    </header>
         <main class="flex-grow">
             <!-- Hero Section -->
             <section class="relative w-full h-[500px] flex items-center justify-center overflow-hidden">
@@ -128,7 +142,7 @@
                     </p>
                     <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
                         <a href="Contact.html"> <button
-                                class="bg-primary text-white px-8 py-4 rounded-full font-bold uppercase tracking-widest hover:scale-105 transition-transform">Contact
+                                class="bg-[#1F6F5F] text-white px-8 py-4 rounded-full font-bold uppercase tracking-widest hover:scale-105 transition-transform">Contact
                                 Us to Become a Partner</button></a>
 
                     </div>
@@ -157,8 +171,7 @@
                         <div class="h-64 overflow-hidden relative">
                             <img alt="Coffee Plantation"
                                 class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                                data-alt="Lush green coffee plantation in Ethiopia"
-                                src="Images/Sarees.PNG" />
+                                data-alt="Lush green coffee plantation in Ethiopia" src="Images/Sarees.PNG" />
                             <div
                                 class="absolute top-4 right-4 bg-primary text-white text-xs font-bold px-3 py-1 rounded-full">
                                 Origin Partner</div>
@@ -199,56 +212,56 @@
             </section>
         </main>
         <!-- Footer -->
-        <footer class="bg-background-dark text-white pt-20 pb-10 border-t border-white/5">
-        <div class="max-w-7xl mx-auto px-6 lg:px-12">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
-                <div class="col-span-1 md:col-span-1">
-                    <div style="margin-bottom:8px;">
-                        <img src="Images/Logo (1).png" alt="Cremeverse Logo" style="
+        <footer class="bg-[FEFDDF] text-white pt-20 pb-10 border-t border-white/5">
+            <div class="max-w-7xl mx-auto px-6 lg:px-12">
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+                    <div class="col-span-1 md:col-span-1">
+                        <div style="margin-bottom:8px;">
+                            <img src="Images/Logo (1).png" alt="Cremeverse Logo" style="
                                 width:170px;
                                 height:auto;
                                 object-fit:contain;
                             ">
+                        </div>
+                        <p class="text-primary text-sm leading-relaxed mb-6">
+                            Dedicated to bringing you the finest ethically sourced coffee from across the globe.
+                        </p>
                     </div>
-                    <p class="text-gray-400 text-sm leading-relaxed mb-6">
-                        Dedicated to bringing you the finest ethically sourced coffee from across the globe.
-                    </p>
-                </div>
-                <div>
-                    <h4 class="font-bold mb-6">Quick Links</h4>
-                    <ul class="space-y-4 text-sm text-gray-400">
-                        <li><a class="hover:text-primary transition-colors" href="/index.html">Home</a></li>
-                        <li><a class="hover:text-primary transition-colors" href="/Blog.html">Blog</a></li>
-                        <li><a class="hover:text-primary transition-colors" href="/Contact.html">Contact</a></li>
-                        <li><a class="hover:text-primary transition-colors" href="/Events.html">Events</a></li>
-                        <li><a class="hover:text-primary transition-colors" href="/Partners.html">Partners</a></li>
+                    <div>
+                        <h4 class="font-bold mb-6 text-primary">Quick Links</h4>
+                        <ul class="space-y-4 text-sm text-primary">
+                            <li><a class="hover:text-primary transition-colors" href="/index.html">Home</a></li>
+                            <li><a class="hover:text-primary transition-colors" href="/Blog.html">Blog</a></li>
+                            <li><a class="hover:text-primary transition-colors" href="/Contact.html">Contact</a></li>
+                            <li><a class="hover:text-primary transition-colors" href="/Events.html">Events</a></li>
+                            <li><a class="hover:text-primary transition-colors" href="/Partners.html">Partners</a></li>
 
-                    </ul>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-bold mb-6 text-primary">Contact Us</h4>
+                        <ul class="space-y-4 text-sm text-primary">
+                            <li class="flex items-start gap-3">
+                                <span class="material-symbols-outlined text-primary text-sm mt-0.5">location_on</span>
+                                220, Anjanapura, Double Rd, Narayana Nagar 1st Block, Bengaluru, Karnataka 560062
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span class="material-symbols-outlined text-primary text-sm">phone</span>
+                                086189 66567
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div>
-                    <h4 class="font-bold mb-6">Contact Us</h4>
-                    <ul class="space-y-4 text-sm text-gray-400">
-                        <li class="flex items-start gap-3">
-                            <span class="material-symbols-outlined text-primary text-sm mt-0.5">location_on</span>
-                            220, Anjanapura, Double Rd, Narayana Nagar 1st Block, Bengaluru, Karnataka 560062
-                        </li>
-                        <li class="flex items-center gap-3">
-                            <span class="material-symbols-outlined text-primary text-sm">phone</span>
-                             086189 66567
-                        </li>
-                    </ul>
+                <div
+                    class="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-primary">
+                    <p>© 2024 Green Bean Coffee Roasters. All rights reserved.</p>
+                    <div class="flex gap-8">
+                        <a class="hover:text-white transition-colors" href="#">Privacy Policy</a>
+                        <a class="hover:text-white transition-colors" href="#">Terms of Service</a>
+                    </div>
                 </div>
             </div>
-            <div
-                class="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-500">
-                <p>© 2024 Green Bean Coffee Roasters. All rights reserved.</p>
-                <div class="flex gap-8">
-                    <a class="hover:text-white transition-colors" href="#">Privacy Policy</a>
-                    <a class="hover:text-white transition-colors" href="#">Terms of Service</a>
-                </div>
-            </div>
-        </div>
-    </footer>
+        </footer>
         <script>
             document.addEventListener("DOMContentLoaded", function () {
                 const menuBtn = document.getElementById("menuBtn");
