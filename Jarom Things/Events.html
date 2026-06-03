@@ -10,7 +10,7 @@
     <script defer src="/_vercel/analytics/script.js"></script>
 
     <link
-        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap"
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght=300;400;500;600;700;800&amp;display=swap"
         rel="stylesheet" />
     <link
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
@@ -57,51 +57,52 @@
     <!-- Persistent Header -->
     <header class="sticky top-0 z-50 bg-[FEFDDF] backdrop-blur-md border-b border-primary/20">
 
-        <div class="max-w-7xl mx-auto px-6 lg:px-12 flex h-20 items-center justify-between">
+            <div class="max-w-7xl mx-auto px-6 lg:px-12 flex h-20 items-center justify-between">
 
-            <!-- Logo -->
-            <div class="flex items-center gap-2">
-                <!-- <div style="margin-bottom:8px;">
+                <!-- Logo -->
+                <div class="flex items-center gap-2">
+                    <!-- <div style="margin-bottom:8px;">
                     <img src="Images/Logo (1).png" alt="Cremeverse Logo" style="
                                 width:170px;
                                 height:auto;
                                 object-fit:contain;
                             ">
                 </div> -->
+                </div>
+
+                <!-- Desktop Nav -->
+                <nav class="hidden md:flex items-center gap-10">
+                    <a class="text-sm  hover:text-primary hover:font-bold transition-colors text-primary"
+                        href="index.html">Home</a>
+                    <a class="text-sm  hover:text-primary hover:font-bold transition-colors text-primary"
+                        href="Events.html">Events</a>
+                    <a class="text-sm  hover:text-primary hover:font-bold transition-colors text-primary"
+                        href="Contact.html">Contact</a>
+                    <a class="text-sm  hover:text-primary hover:font-bold transition-colors text-primary"
+                        href="Partners.html">Partners</a>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <button id="menuBtn" class="md:hidden p-2 rounded-lg border border-primary/20">
+                    <span class="material-symbols-outlined">menu</span>
+                </button>
+
             </div>
 
-            <!-- Desktop Nav -->
-            <nav class="hidden md:flex items-center gap-10">
-                <a class="text-sm font-semibold hover:text-primary hover:font-bold transition-colors text-primary"
-                    href="index.html">Home</a>
-                <a class="text-sm font-semibold hover:text-primary hover:font-bold transition-colors text-primary"
-                    href="Events.html">Events</a>
-                <!-- <a class="text-sm font-semibold hover:text-primary hover:font-bold transition-colors text-primary"
-                    href="Blog.html">Blog</a> -->
-                <a class="text-sm font-semibold hover:text-primary hover:font-bold transition-colors text-primary"
-                    href="Contact.html">Contact</a>
-                <a class="text-sm font-semibold hover:text-primary hover:font-bold transition-colors text-primary"
-                    href="Partners.html">Partners</a>
-            </nav>
-
-            <!-- Mobile Menu Button -->
-            <button id="menuBtn" class="md:hidden p-2 rounded-lg border border-primary/20">
-                <span class="material-symbols-outlined">menu</span>
-            </button>
-
-        </div>
-
-        <!-- Mobile Nav Dropdown -->
-        <div id="mobileMenu" class="hidden px-6 pb-6">
-            <nav class="flex flex-col gap-4 bg-white dark:bg-background-dark rounded-xl p-4 shadow">
-                <a class="text-sm font-semibold hover:text-primary hover:font-bold transition-colors" href="index.html">Home</a>
-                <a class="text-sm font-semibold hover:text-primary hover:font-bold transition-colors" href="Events.html">Events</a>
-                <a class="text-sm font-semibold hover:text-primary hover:font-bold transition-colors" href="Blog.html">Blog</a>
-                <a class="text-sm font-semibold hover:text-primary hover:font-bold transition-colors" href="Contact.html">Contact</a>
-                <a class="text-sm font-semibold hover:text-primary hover:font-bold transition-colors" href="Partners.html">Partners</a>
-            </nav>
-        </div>
-    </header>
+            <!-- Mobile Nav Dropdown -->
+            <div id="mobileMenu" class="hidden px-6 pb-6">
+                <nav class="flex flex-col gap-4 bg-white dark:bg-background-dark rounded-xl p-4 shadow">
+                    <a class="text-sm font-semibold hover:text-primary hover:font-bold transition-colors"
+                        href="index.html">Home</a>
+                    <a class="text-sm font-semibold hover:text-primary hover:font-bold transition-colors"
+                        href="Events.html">Events</a>
+                    <a class="text-sm font-semibold hover:text-primary hover:font-bold transition-colors"
+                        href="Contact.html">Contact</a>
+                    <a class="text-sm font-semibold hover:text-primary hover:font-bold transition-colors"
+                        href="Partners.html">Partners</a>
+                </nav>
+            </div>
+        </header>
 
     <!--Logo -->
     <div class="w-full flex justify-center pt-4">
@@ -196,6 +197,43 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Event Card 2: Aata Kaapi and Seere -->
+            <div data-category="Drinks"
+                class="group bg-white dark:bg-accent-brown/20 rounded-xl overflow-hidden border border-accent-brown/5 shadow-sm hover:shadow-xl transition-all flex flex-col">
+                <div class="relative h-56 overflow-hidden">
+                    <img alt="Traditional Indian saree background with an artistic touch"
+                        class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                        src="Images/AttaKaapiSeere/Image 1.jpg" />
+                    <div
+                        class="absolute top-4 right-4 bg-white/95 backdrop-blur px-3 py-1 rounded-lg text-center shadow-lg">
+                        <p class="text-xs font-bold text-accent-brown/50 uppercase">April</p>
+                        <p class="text-xl font-extrabold text-accent-brown">26</p>
+                    </div>
+                    <div class="absolute bottom-4 left-4">
+                        <span
+                            class="px-3 py-1 rounded-md bg-[#1F6F5F] text-white text-[10px] font-black uppercase tracking-wider">Completed</span>
+                    </div>
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <div class="flex items-center gap-2 text-primary text-sm font-bold mb-2">
+                        <span class="material-symbols-outlined text-base">schedule</span>
+                        10AM to 9PM
+                    </div>
+                    <h3 class="text-xl  mb-3 group-hover:text-primary transition-colors">Aata Kaapi and Seere
+                    </h3>
+                    <p class="text-accent-brown/70 dark:text-soft-cream/70 text-sm leading-relaxed mb-6">Come to the Cafe with the Saree and Dhoti and Enjoy your Favourite drinks and Play your Board Games and Enjoy your Coffee.</p>
+                    <div class="mt-auto">
+                        <a href="Aatakaapiandseere.html">
+                            <button
+                                class="w-full py-3 rounded-lg border-2 border-primary text-accent-brown dark:text-primary font-bold hover:bg-primary hover:text-white transition-all">
+                                View Details
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
         </div>
         <!-- Dynamic pagination -->
         <div id="pagination" class="mt-16 flex items-center justify-center gap-2 text text-white"></div>
